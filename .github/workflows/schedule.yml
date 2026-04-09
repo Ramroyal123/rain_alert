@@ -2,7 +2,7 @@ name: Daily Python Script
 
 on:
   schedule:
-    - cron: '47 8 * * *'  # Runs at 00:00 UTC every day
+    - cron: '0 0 * * *'  # Runs at 00:00 UTC every day
   workflow_dispatch:      # Allows you to run it manually for testing
 
 jobs:
