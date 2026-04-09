@@ -16,7 +16,7 @@ weather_parameters={
     "cnt":4
 }
 response=requests.get(OWM_ENDPOINT,params=weather_parameters)
-response.raise_for_status()
+#response.raise_for_status()
 weather_data=response.json()
 #print(weather_data["list"][0]["weather"][0]["id"])
 will_rain=False
